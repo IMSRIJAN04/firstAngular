@@ -14,5 +14,18 @@
     </p>
 </div>
 
+<div class="play-container">
+    <ng-template [ngIf]="clickCounter  > 4" [ngIfElse]="none" >
+        <p>
+    The clickCounter is <strong>IS GREATOR</strong> than 4.
+        </p>
+    </ng-template>
+    
+    <ng-template #none>
+        <p>The clickCounter is <strong>NOT GREATOR</strong> than 4.</p>
+
+    </ng-template>
+</div>
+
 
 
