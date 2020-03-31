@@ -14,7 +14,7 @@
     </p>
 </div>
 
-<div class="play-container">
+<div class="play-container" [ngClass]="setClasses()" >
     <ng-template [ngIf]="clickCounter  > 4" [ngIfElse]="none" >
         <p>
     The clickCounter is <strong>IS GREATOR</strong> than 4.
